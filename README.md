@@ -9,7 +9,7 @@ CLI tool to build the wireframes of components and utilities for a React/ React 
 [![License](https://img.shields.io/npm/l/boost-cli.svg)](https://github.com/React-Native-Boost/boost-cli/blob/master/package.json)
 
 <!-- toc -->
-# [Install](#install)
+* [Install](#install)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
@@ -39,22 +39,22 @@ USAGE
 ...
 ```
 
-See[Commands](#commands) for the commands available.
+See [Commands](#commands) for the commands available.
 <!-- usagestop -->
 
 # Commands
 <!-- commands -->
-* [`react-boost component <component name>`](#react-boost-component-component-name)
-* [`react-boost utility <utility name>`](#react-boost-utility-utility-name)
+* [`react-boost component [COMPONENTNAME]`](#react-boost-component-component-name)
+* [`react-boost utility [UTILITYNAME]`](#react-boost-utility-utility-name)
 * [`react-boost help [COMMAND]`](#react-boost-help-command)
 
-## `react-boost component <component name>`
+## `react-boost component [COMPONENTNAME]`
 
 The react-boost component command creates a component file with the appropriate component template. Values for the --flavour and --directory flags will default to react-native and ./components respectively.
 
 ```
 USAGE
-  $ react-boost component <component name>
+  $ react-boost component [COMPONENTNAME]
 
 ARGUMENTS
   COMPONENTNAME  Name of your component
@@ -75,13 +75,13 @@ EXAMPLES
 
 _See code: [src/commands/component.ts](https://github.com/React-Native-Boost/boost-cli/blob/v0.0.0/src/commands/component.ts)_
 
-## `react-boost utility <utility name>`
+## `react-boost utility [UTILITYNAME]`
 
 The react-boost utility command creates a utility file with the utility template. Value for --directory flags will default to ./utils.
 
 ```
 USAGE
-  $ react-boost utility <utility name>
+  $ react-boost utility [UTILITYNAME]
 
 ARGUMENTS
   UTILITYNAME  Name of your utility

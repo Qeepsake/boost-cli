@@ -6,7 +6,7 @@ export default class Component extends Command {
   static hidden = false   // hide the command from help
 
   // custom usage string for help, overrides the default usage
-  static usage = 'utility <utility name>'
+  static usage = 'utility [UTILITYNAME]'
 
   // examples to add to help, each can be multiline
   static examples = [
