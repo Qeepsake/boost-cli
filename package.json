@@ -1,12 +1,12 @@
 {
-  "name": "react-boost",
+  "name": "boost-cli",
   "description": "CLI tool to build the wireframes of components and utilities for a React/ React Native project",
   "version": "0.0.0",
   "author": "Denise @Denise-Ng",
   "bin": {
-    "react-boost": "./bin/run"
+    "boost-cli": "./bin/run"
   },
-  "bugs": "https://github.com/aspect-apps/react-boost/issues",
+  "bugs": "https://github.com/React-Native-Boost/boost-cli/issues",
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.0",
     "@types/mkdirp": "^1.0.1",
@@ -27,7 +27,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/aspect-apps/react-boost",
+  "homepage": "https://github.com/React-Native-Boost/boost-cli",
   "keywords": [
     "oclif"
   ],
@@ -40,7 +40,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "aspect-apps/react-boost",
+  "repository": "React-Native-Boost/boost-cli",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
