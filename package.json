@@ -1,5 +1,5 @@
 {
-  "name": "react-boost",
+  "name": "@react-native-boost/boost-cli",
   "description": "CLI tool to build the wireframes of components and utilities for a React/ React Native project",
   "version": "0.0.1",
   "author": "Denise @Denise-Ng",
@@ -44,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/React-Native-Boost/boost-cli.git"
+    "url": "git://github.com/React-Native-Boost/boost-cli.git"
   },
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
@@ -60,5 +60,8 @@
     "@oclif/plugin-help": "^3.2.2",
     "mkdirp": "^0.5.5",
     "tslib": "^1.14.1"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   }
 }

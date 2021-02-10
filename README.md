@@ -29,28 +29,27 @@ $ yarn global add boost-cli
 # Usage
 <!-- usage -->
 ```sh-session
+$ npm install -g @react-native-boost/boost-cli
 $ react-boost COMMAND
 running command...
 $ react-boost (-v|--version|version)
-boost-cli/0.0.0 darwin-x64 node-v14.15.4
+@react-native-boost/boost-cli/0.0.1 darwin-x64 node-v14.15.4
 $ react-boost --help [COMMAND]
 USAGE
   $ react-boost COMMAND
 ...
 ```
-
-See [Commands](#commands) for the commands available.
 <!-- usagestop -->
 
 # Commands
 <!-- commands -->
-* [`react-boost component [COMPONENTNAME]`](#react-boost-component-component-name)
-* [`react-boost utility [UTILITYNAME]`](#react-boost-utility-utility-name)
+* [`react-boost component [COMPONENTNAME]`](#react-boost-component-componentname)
 * [`react-boost help [COMMAND]`](#react-boost-help-command)
+* [`react-boost utility [UTILITYNAMxE]`](#react-boost-utility-utilitynamxe)
 
 ## `react-boost component [COMPONENTNAME]`
 
-The react-boost component command creates a component file with the appropriate component template. Values for the --flavour and --directory flags will default to react-native and ./components respectively.
+The component command creates a component file with the appropriate component template. Values for the --flavour and --directory flags will default to react-native and ./components respectively.
 
 ```
 USAGE
@@ -60,44 +59,20 @@ ARGUMENTS
   COMPONENTNAME  Name of your component
 
 OPTIONS
-  -d, --directory  [default: ./components] The directory you want your function to reside in. (example:
+  -d, --directory=directory  [default: ./components] The directory you want your function to reside in. (example:
                              ./src/components)
 
-  -f, --flavour    [default: react-native]
+  -f, --flavour=flavour      [default: react-native]
 
 EXAMPLES
   $ react-boost component MyComponent
   $ react-boost component MyComponent --flavour react-native
   $ react-boost component MyComponent --directory ./src/components
-  $ react-boost component MyComponent --flavour=react-native --directory ./src/components
+  $ react-boost component MyComponent --flavour=react-native --directory./src/components
   $ react-boost component MyComponent -f react-native -d ./src/components
 ```
 
-_See code: [src/commands/component.ts](https://github.com/React-Native-Boost/boost-cli/blob/v0.0.0/src/commands/component.ts)_
-
-## `react-boost utility [UTILITYNAME]`
-
-The react-boost utility command creates a utility file with the utility template. Value for --directory flags will default to ./utils.
-
-```
-USAGE
-  $ react-boost utility [UTILITYNAME]
-
-ARGUMENTS
-  UTILITYNAME  Name of your utility
-
-OPTIONS
-  -d, --directory  [default: ./utils] The directory you want your function to reside in. (example:
-                             ./src/utils)
-
-EXAMPLES
-  $ react-boost utility MyUtility
-  $ react-boost utility MyUtility --directory ./src/utils
-  $ react-boost utility MyUtility --directory=./src/utils
-  $ react-boost utility MyUtility -d ./src/utils
-```
-
-_See code: [src/commands/utility.ts](https://github.com/React-Native-Boost/boost-cli/blob/v0.0.0/src/commands/utility.ts)_
+_See code: [src/commands/component.ts](https://github.com/React-Native-Boost/boost-cli/blob/v0.0.1/src/commands/component.ts)_
 
 ## `react-boost help [COMMAND]`
 
@@ -105,8 +80,7 @@ display help for react-boost
 
 ```
 USAGE
-  $ react-boost help component
-  $ react-boost help utility
+  $ react-boost help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -116,4 +90,28 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+
+## `react-boost utility [UTILITYNAMxE]`
+
+The utility command creates a utility file with the utility template. Value for the --directory flag will default to ./utils.
+
+```
+USAGE
+  $ react-boost utility [UTILITYNAMxE]
+
+ARGUMENTS
+  UTILITYNAME  Name of your utility
+
+OPTIONS
+  -d, --directory=directory  [default: ./utils] The directory you want your function to reside in. (example:
+                             ./src/utils)
+
+EXAMPLES
+  $ react-boost utility MyUtility
+  $ react-boost utility MyUtility --directory ./src/utils
+  $ react-boost utility MyUtility --directory=./src/utils
+  $ react-boost utility MyUtility -d ./src/utils
+```
+
+_See code: [src/commands/utility.ts](https://github.com/React-Native-Boost/boost-cli/blob/v0.0.1/src/commands/utility.ts)_
 <!-- commandsstop -->
