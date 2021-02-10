@@ -17,11 +17,11 @@ CLI tool to build the wireframes of components and utilities for a React/ React 
 # Install
 <!--intall-->
 ```
-$ npm install boost-cli --save
+$ npm install -g boost-cli
 ```
 or
 ```
-$ yarn add boost-cli
+$ yarn global add boost-cli
 ```
 
 <!-- installstop -->
