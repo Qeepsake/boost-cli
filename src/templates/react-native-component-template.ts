@@ -1,5 +1,5 @@
 export const reactNativeComponentTemplate = (functionName: string) => (
-`import React from 'react';
+  `import React from 'react';
 import {View} from 'react-native';
 
 export function ${functionName}(){
