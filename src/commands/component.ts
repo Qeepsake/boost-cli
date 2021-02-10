@@ -12,11 +12,11 @@ export default class Component extends Command {
 
     // examples to add to help, each can be multiline
     static examples = [
-      '$ react-boost component MyComponent',
-      '$ react-boost component MyComponent --flavour react-native',
-      '$ react-boost component MyComponent --directory ./src/components',
-      '$ react-boost component MyComponent --flavour=react-native --directory./src/components',
-      '$ react-boost component MyComponent -f react-native -d ./src/components',
+      '$ boost-cli component MyComponent',
+      '$ boost-cli component MyComponent --flavour react-native',
+      '$ boost-cli component MyComponent --directory ./src/components',
+      '$ boost-cli component MyComponent --flavour=react-native --directory./src/components',
+      '$ boost-cli component MyComponent -f react-native -d ./src/components',
     ];
 
     static args = [

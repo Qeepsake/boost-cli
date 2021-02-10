@@ -37,7 +37,7 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "react-boost",
+    "bin": "boost-cli",
     "plugins": [
       "@oclif/plugin-help"
     ]
@@ -62,6 +62,6 @@
     "tslib": "^1.14.1"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   }
 }

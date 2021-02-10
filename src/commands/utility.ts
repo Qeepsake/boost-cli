@@ -7,14 +7,14 @@ export default class Component extends Command {
   static hidden = false   // hide the command from help
 
   // custom usage string for help, overrides the default usage
-  static usage = 'utility [UTILITYNAMxE]'
+  static usage = 'utility [UTILITYNAME]'
 
   // examples to add to help, each can be multiline
   static examples = [
-    '$ react-boost utility MyUtility',
-    '$ react-boost utility MyUtility --directory ./src/utils',
-    '$ react-boost utility MyUtility --directory=./src/utils',
-    '$ react-boost utility MyUtility -d ./src/utils',
+    '$ boost-cli utility MyUtility',
+    '$ boost-cli utility MyUtility --directory ./src/utils',
+    '$ boost-cli utility MyUtility --directory=./src/utils',
+    '$ boost-cli utility MyUtility -d ./src/utils',
   ]
 
   static args = [
