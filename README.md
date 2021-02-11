@@ -136,6 +136,7 @@ _See code: [src/commands/utility.ts](https://github.com/React-Native-Boost/boost
 The repo is configured to use GitHub Actions to automatically publish the package to GitHub Packages.
 
 1. Update the versioning in `package.json`
-2. Create a new release in the repository
+
+2. Create a new release in the repository\
 Creating a new release in your repository triggers the workflow to build and test your code. If the tests pass, then the package will be published to GitHub Packages.
 <!-- publishstop -->
