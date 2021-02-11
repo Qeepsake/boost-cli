@@ -4,7 +4,7 @@ import {getTemplate} from '../utils/get-template'
 import {getFileName} from '../utils/get-file-name'
 
 export default class Component extends Command {
-    static description = 'The component command creates a component file with the appropriate component template. Values for the --flavour and --directory flags will default to react-native and ./components respectively. It also creates a corresponding file for your component\'s styles in the `/styles` subdirectory in the directory. The `COMPONENTNAME` splits by uppercase letters to form the file name, so `MyComponent` becomes `my-component.js`.\n\n' +
+    static description = 'The component command creates a component file with the appropriate component template. Values for the --flavour and --directory flags will default to react-native and ./components respectively. It also creates a corresponding file for your component\'s styles in the `/styles` subdirectory in the directory. The `COMPONENTNAME` splits by uppercase letters to form the file name, so `MyComponent` becomes `my-component.js`.\n' +
 `E.g. boost-cli component MyComponent -f react-native -d ./src/components
 - Creates a component file named my-component.js in ./src/components
 - Creates a file for your component's style named my-component-style.js in ./src/components/styles`
