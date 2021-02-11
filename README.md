@@ -10,6 +10,7 @@ CLI tool to build the wireframes of components and utilities for a React/ React 
 * [Install](#install)
 * [Usage](#usage)
 * [Commands](#commands)
+* [Publish](#publish)
 <!-- tocstop -->
 
 # Install
@@ -118,7 +119,7 @@ OPTIONS
 
 DESCRIPTION
   E.g. boost-cli utility MyUtility -d ./src/utils
-     - Creates a utility file named my-utility.js in ./src/utils
+  - Creates a utility file named my-utility.js in ./src/utils
 
 EXAMPLES
   $ boost-cli utility MyUtility
@@ -129,3 +130,12 @@ EXAMPLES
 
 _See code: [src/commands/utility.ts](https://github.com/React-Native-Boost/boost-cli/blob/v0.0.1/src/commands/utility.ts)_
 <!-- commandsstop -->
+
+# Publish
+<!--publish-->
+The repo is configured to use GitHub Actions to automatically publish the package to GitHub Packages.
+
+1. Update the versioning in `package.json`
+2. Create a new release in the repository
+Creating a new release in your repository triggers the workflow to build and test your code. If the tests pass, then the package will be published to GitHub Packages.
+<!-- publishstop -->
