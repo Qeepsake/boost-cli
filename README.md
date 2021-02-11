@@ -54,7 +54,7 @@ USAGE
 
 ## `boost-cli component [COMPONENTNAME]`
 
-The component command creates a component file with the appropriate component template. Values for the --flavour and --directory flags will default to react-native and ./components respectively.
+The component command creates a component file with the appropriate component template. Values for the --flavour and --directory flags will default to react-native and ./components respectively. It also creates a corresponding file for your component's styles in the `/styles` subdirectory in the directory. The `COMPONENTNAME` splits by uppercase letters to form the file name, so `MyComponent` becomes `my-component.js`.
 
 ```
 USAGE
@@ -68,6 +68,11 @@ OPTIONS
                              ./src/components)
 
   -f, --flavour=flavour      [default: react-native]
+
+DESCRIPTION
+  E.g. boost-cli component MyComponent -f react-native -d ./src/components
+  - Creates a component file named my-component.js in ./src/components
+  - Creates a file for your component's style named my-component-style.js in ./src/components/styles
 
 EXAMPLES
   $ boost-cli component MyComponent
@@ -98,7 +103,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2
 
 ## `boost-cli utility [UTILITYNAME]`
 
-The utility command creates a utility file with the utility template. Value for the --directory flag will default to ./utils.
+The utility command creates a utility file with the utility template. Value for the --directory flag will default to ./utils. The `UTILITYNAME` splits by uppercase letters to form the file name, so `MyUtility` becomes `my-utility.js`.
 
 ```
 USAGE
@@ -110,6 +115,10 @@ ARGUMENTS
 OPTIONS
   -d, --directory=directory  [default: ./utils] The directory you want your function to reside in. (example:
                              ./src/utils)
+
+DESCRIPTION
+  E.g. boost-cli utility MyUtility -d ./src/utils
+     - Creates a utility file named my-utility.js in ./src/utils
 
 EXAMPLES
   $ boost-cli utility MyUtility

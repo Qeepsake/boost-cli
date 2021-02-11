@@ -1,8 +1,12 @@
 import {Command, flags} from '@oclif/command'
 import {createTemplate} from '../utils/create-template'
+import {getTemplate} from '../utils/get-template'
+import {getFileName} from '../utils/get-file-name'
 
 export default class Component extends Command {
-  static description = 'The utility command creates a utility file with the utility template. Value for the --directory flag will default to ./utils.'
+  static description = 'The utility command creates a utility file with the utility template. Value for the --directory flag will default to ./utils. The `UTILITYNAME` splits by uppercase letters to form the file name, so `MyUtility` becomes `my-utility.js`.\n' +
+`E.g. boost-cli utility MyUtility -d ./src/utils
+- Creates a utility file named my-utility.js in ./src/utils`
 
   static hidden = false   // hide the command from help
 
@@ -42,6 +46,8 @@ export default class Component extends Command {
     const {directory} = flags
     const {utilityName} = args
 
-    createTemplate(directory, utilityName, 'utility')
+    const utilityFileName = getFileName(utilityName)
+
+    createTemplate(directory, utilityFileName, getTemplate('utility'), utilityName)
   }
 }

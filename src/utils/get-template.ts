@@ -1,4 +1,5 @@
 import {reactNativeComponentTemplate} from '../templates/react-native-component-template'
+import {reactNativeStyleTemplate} from '../templates/react-native-style-template'
 import {utilityTemplate} from '../templates/utility-template'
 
 export const getTemplate = (command: string, flavour?: string) => {
@@ -10,6 +11,9 @@ export const getTemplate = (command: string, flavour?: string) => {
     default:
       return reactNativeComponentTemplate
     }
+  case 'componentStyle': {
+    return reactNativeStyleTemplate
+  }
   case 'utility':
     return utilityTemplate
   default:
