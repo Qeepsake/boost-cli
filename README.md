@@ -1,6 +1,4 @@
-<h3 align="center">
-  <img src="./boost-cli.png" width="315" /><br/>
-</h3>
+<img src="./boost-cli.png" width="315" /><br/>
 
 # Boost CLI
 
