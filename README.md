@@ -1,7 +1,8 @@
-<h2 align="center">
-  <img src="./boost-cli.png" width="215" /><br/>
-  Boost CLI
-</h2>
+<h3 align="center">
+  <img src="./boost-cli.png" width="315" /><br/>
+</h3>
+
+# Boost CLI
 
 CLI tool to build the wireframes of components and utilities for a React/ React Native project.
 
