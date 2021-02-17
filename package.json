@@ -1,5 +1,5 @@
 {
-  "name": "@react-native-boost/boost-cli",
+  "name": "@boost-academy/boost-cli",
   "description": "CLI tool to build the wireframes of components and utilities for a React/ React Native project",
   "version": "0.0.3",
   "author": "Denise @Denise-Ng",
@@ -7,7 +7,7 @@
     "boost-cli": "bin/run"
   },
   "bugs": {
-    "url": "https://github.com/React-Native-Boost/boost-cli/issues"
+    "url": "https://github.com/boost-academy/boost-cli/issues"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.0",
@@ -29,7 +29,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/React-Native-Boost/boost-cli",
+  "homepage": "https://github.com/boost-academy/boost-cli",
   "keywords": [
     "oclif"
   ],
@@ -44,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/React-Native-Boost/boost-cli.git"
+    "url": "git://github.com/boost-academy/boost-cli.git"
   },
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",

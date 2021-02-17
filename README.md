@@ -5,7 +5,7 @@
 CLI tool to build the wireframes of components and utilities for a React/ React Native project.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![License](https://img.shields.io/npm/l/boost-cli.svg)](https://github.com/React-Native-Boost/boost-cli/blob/master/package.json)
+[![License](https://img.shields.io/npm/l/boost-cli.svg)](https://github.com/boost-academy/boost-cli/blob/master/package.json)
 
 <!-- toc -->
 * [Install](#install)
@@ -40,7 +40,7 @@ Refer to [Commands](#commands) for the commands available.
 $ boost-cli COMMAND
 running command...
 $ boost-cli (-v|--version|version)
-@react-native-boost/boost-cli/0.0.1 darwin-x64 node-v14.15.4
+@boost-academy/boost-cli/0.0.1 darwin-x64 node-v14.15.4
 $ boost-cli --help [COMMAND]
 USAGE
   $ boost-cli COMMAND
@@ -84,7 +84,7 @@ EXAMPLES
   $ boost-cli component MyComponent -f react-native -d ./src/components
 ```
 
-_See code: [src/commands/component.ts](https://github.com/React-Native-Boost/boost-cli/blob/v0.0.1/src/commands/component.ts)_
+_See code: [src/commands/component.ts](https://github.com/boost-academy/boost-cli/blob/v0.0.1/src/commands/component.ts)_
 
 ## `boost-cli help [COMMAND]`
 
@@ -129,7 +129,7 @@ EXAMPLES
   $ boost-cli utility MyUtility -d ./src/utils
 ```
 
-_See code: [src/commands/utility.ts](https://github.com/React-Native-Boost/boost-cli/blob/v0.0.1/src/commands/utility.ts)_
+_See code: [src/commands/utility.ts](https://github.com/boost-academy/boost-cli/blob/v0.0.1/src/commands/utility.ts)_
 <!-- commandsstop -->
 
 # Publish
