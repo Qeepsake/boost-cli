@@ -1,5 +1,6 @@
-boost-cli
-===========
+<img src="./boost-cli.png" width="315" /><br/>
+
+# Boost CLI
 
 CLI tool to build the wireframes of components and utilities for a React/ React Native project.
 
@@ -18,7 +19,7 @@ CLI tool to build the wireframes of components and utilities for a React/ React 
 1. Login to npm with `npm login`. Then replace USERNAME with your GitHub username (in lowercase), TOKEN with your [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token), and PUBLIC-EMAIL-ADDRESS with your email address. Make sure you grant the token the `read:packages` permission to install the package.
 
 ```
-npm login --scope=@react-native-boost --registry=https://npm.pkg.github.com
+npm login --scope=@boost-academy --registry=https://npm.pkg.github.com
 
 > Username: USERNAME
 > Password: TOKEN
@@ -28,7 +29,7 @@ npm login --scope=@react-native-boost --registry=https://npm.pkg.github.com
 2. `npm install` the package. Replace x.x.x with the current version.
 
 ```
-npm install -g @react-native-boost/boost-cli@x.x.x
+npm install -g @boost-academy/boost-cli@x.x.x
 ```
 <!-- installstop -->
 
@@ -136,6 +137,7 @@ _See code: [src/commands/utility.ts](https://github.com/React-Native-Boost/boost
 The repo is configured to use GitHub Actions to automatically publish the package to GitHub Packages.
 
 1. Update the versioning in `package.json`
-2. Create a new release in the repository
+
+2. Create a new release in the repository\
 Creating a new release in your repository triggers the workflow to build and test your code. If the tests pass, then the package will be published to GitHub Packages.
 <!-- publishstop -->
