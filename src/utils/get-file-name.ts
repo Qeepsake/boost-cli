@@ -1,6 +1,8 @@
 export const getFileName = (componentName: string) => {
-  const splitComponentName: string[] = componentName.match(/[A-Z][a-z]+/g) ?? []
+  // Splits names with TitleCase or camelCase
+  const splitComponentName: string[] = componentName.match(/(?<=[a-z])(?=[A-Z])/g) ?? []
   let fileName: string = componentName
+
   for (let i = 0; i < splitComponentName.length; i++) {
     if (i === 0) {
       fileName = splitComponentName[i].toLowerCase()
