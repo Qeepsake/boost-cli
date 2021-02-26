@@ -1,7 +1,7 @@
 {
   "name": "@boost-academy/boost-cli",
   "description": "CLI tool to build the wireframes of components and utilities for a React/ React Native project",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Denise @Denise-Ng",
   "bin": {
     "boost-cli": "bin/run"
